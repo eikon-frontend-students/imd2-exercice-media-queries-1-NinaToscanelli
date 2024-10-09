@@ -16,3 +16,124 @@ img,
 video {
   display: block;
 }
+
+h2 {
+  color: #000;
+  font-family: "Hammersmith One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  font-size: 20px;
+}
+
+.description-content {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.logos {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  width: 320px;
+  padding: 0px 59px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+h3 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.download-title {
+  color: #000;
+  text-align: center;
+  font-family: "Hammersmith One";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.download-content-mobile {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.download-content-mobile a {
+  text-decoration-line: underline;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 576px) {
+  .logos {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 576px) {
+  .download-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    text-align: left;
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .description-content {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .logos {
+    width: 100px;
+    height: 100px;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .download-title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .download-content-desktop {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
