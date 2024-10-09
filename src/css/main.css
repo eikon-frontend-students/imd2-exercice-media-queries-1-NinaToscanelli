@@ -37,14 +37,15 @@ h2 {
   line-height: normal;
 }
 .logos {
-  width: 60px;
-  height: 60px;
   display: flex;
-  width: 320px;
   padding: 0px 59px;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+img .logos {
+  width: 60px;
+  height: 60px;
 }
 
 h3 {
@@ -68,7 +69,7 @@ h3 {
   line-height: normal;
 }
 
-.download-content-mobile {
+.download-content {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -77,24 +78,31 @@ h3 {
   font-weight: 400;
   line-height: normal;
 }
-.download-content-mobile a {
+.download-content a {
   text-decoration-line: underline;
+}
+
+@media (min-width: 360px) {
+  .desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 576px) {
   h2 {
     font-size: 28px;
   }
-}
 
-@media (min-width: 576px) {
   .logos {
     justify-content: space-between;
   }
-}
-@media (min-width: 576px) {
+
   .download-title {
     font-size: 28px;
+  }
+
+  .desktop {
+    display: none;
   }
 }
 
@@ -103,37 +111,27 @@ h3 {
     text-align: left;
     font-size: 36px;
   }
-}
 
-@media (min-width: 992px) {
   .description-content {
     font-size: 20px;
     text-align: left;
   }
-}
 
-@media (min-width: 992px) {
   .logos {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    justify-content: left;
     gap: 30px;
   }
-}
 
-@media (min-width: 992px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
   .download-title {
     font-size: 36px;
   }
-}
-
-@media (min-width: 992px) {
-  .download-content-desktop {
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  .mobile {
+    display: none;
   }
 }
